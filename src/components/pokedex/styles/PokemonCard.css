@@ -5,31 +5,57 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
+  
 }
 
 
 
 .pokemonCard__header {
-  height: 170px;
+  height: 100px;
   background-color: rgb(59, 146, 92);
   background-color: red;
   
 }
 
 .pokemonCard__body {
-  padding: 20px;
+  margin-top: 50px;
+  padding: 20px;  
+    
+}
+
+.pokemonCard__header {  
+  position: relative;
+  
+}
+
+
+.pokemonCard__imgs {  
+  position: absolute, relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+   
 }
 
 .pokemonCard__img {
   position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
   top: 0;
+  transform: translate(-50%, 0);
 }
+
+
 
 .pokemonCard__name {
   text-align: center;
-  margin-top: 60px;
   font-size: 35px;
   text-transform: capitalize; 
+  
 }
 
 .pokemonCard__types {

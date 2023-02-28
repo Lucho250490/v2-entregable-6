@@ -29,15 +29,17 @@ const PokemonCard = ({ pokemonUrl }) => {
     >
       <section
         className={`pokemonCard__header bg-lg-${pokemon?.types[0].type.name}`}
-      ></section>
-      <section className="pokemonCard__body">
-        <div className="pokemonCard__img">
-          <img
-            src={pokemon?.sprites.other["official-artwork"].front_default}
-            alt=""
-          />
+      >
+        <div className="pokemonCard__imgs">
+          <div className="pokemonCard__img">
+            <img
+              src={pokemon?.sprites.other["official-artwork"].front_default}
+              alt=""
+            />
+          </div>
         </div>
-
+      </section>
+      <section className="pokemonCard__body">
         <h3 className="pokemonCard__name ">{pokemon?.name}</h3>
         <h4 className="pokemonCard__types">
           {pokemon?.types[0].type.name}
